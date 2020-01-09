@@ -4,7 +4,7 @@ var axios = require('axios')
 let placeHolder = {"name": "schenn",
                     "value" : "Play Whatever"
                     }
-let mongoUrl = 'mmongodb+srv://mchennupati:Munich1+@cluster0-hnc4i.azure.mongodb.net/test?retryWrites=true&w=majority'
+let mongoUrl = 'mmongodb+srv://user:password@cluster0-hnc4i.azure.mongodb.net/test?retryWrites=true&w=majority'
 let params = 
     {
         useNewUrlParser: true,
