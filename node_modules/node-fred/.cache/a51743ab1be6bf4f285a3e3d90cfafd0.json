@@ -1,0 +1,1 @@
+{"dependencies":[{"name":"../../modules/es6.object.get-prototype-of","loc":{"line":1,"column":8}},{"name":"../../modules/_core","loc":{"line":2,"column":25}}],"generated":{"js":"require(\"../../modules/es6.object.get-prototype-of\"),module.exports=require(\"../../modules/_core\").Object.getPrototypeOf;"},"hash":"7cd873b687387ae404f0d168a72fc4c9"}

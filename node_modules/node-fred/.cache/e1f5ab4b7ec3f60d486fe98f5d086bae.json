@@ -1,0 +1,1 @@
+{"dependencies":[],"generated":{"js":"\"use strict\";function t(t){this.message=t}t.prototype.toString=function(){return\"Cancel\"+(this.message?\": \"+this.message:\"\")},t.prototype.__CANCEL__=!0,module.exports=t;"},"hash":"3c2422cc6dc35862eee9b7cf29c93cb8"}

@@ -1,0 +1,1 @@
+{"dependencies":[{"name":"../utils","loc":{"line":3,"column":20}}],"generated":{"js":"\"use strict\";var e=require(\"../utils\");module.exports=function(t,r){e.forEach(t,function(e,o){o!==r&&o.toUpperCase()===r.toUpperCase()&&(t[r]=e,delete t[o])})};"},"hash":"2a47326efe345761d2467a67b14ac63d"}
