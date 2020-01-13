@@ -55,16 +55,19 @@ client.connect(err => {
   console.log("db connected");
 
   try {
-    axios.get(newUrl).then(res => {
+    axios.get(newUrl).then(res => {res.data.release_dates.map((item)=>{
       try {
         datab
           .collection("macroData")
-          .insertOne({ dates: res.data.release_dates });
+          .insertOne(item );
         console.log("insert succeeded");
       } catch (err) {
         console.log("insert failed");
         console.log(err.message);
       }
+    }
+
+    )
     });
   } catch (err) {
     throw Error("axios get did not work");
