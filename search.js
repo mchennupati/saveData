@@ -1,7 +1,7 @@
 let MongoClient = require('mongodb').MongoClient
 let db_name = 'fred'
 let collection_name = 'macroData'
-let mongoUrl = 'mongodb+srv://mchennupati:Tucher1@cluster0-hnc4i.azure.mongodb.net/test'
+let mongoUrl = "add your url here"
 let mongoParams = {useNewUrlParser: true, useUnifiedTopology: true}
 
 
