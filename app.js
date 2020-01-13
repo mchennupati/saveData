@@ -12,8 +12,8 @@ let tWeek = dateFns.format(dateFns.addWeeks(new Date(), 1), "yyyy-MM-dd");
 
 let baseUrl = "https://api.stlouisfed.org/fred";
 
-let apiKey = 'b5271dff85f7f82f8de9b29aa8eb3c40'
-let mongoUrl = 'mongodb+srv://mchennupati:Tucher1@cluster0-hnc4i.azure.mongodb.net/test'
+let apiKey = "add your apikey here"
+let mongoUrl = 'add your url here'
 
 function builder(baseUrl, apiKey, start, end) {
   let futureDate = "&include_release_dates_with_no_data=true";
