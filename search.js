@@ -1,7 +1,7 @@
 let MongoClient = require('mongodb').MongoClient
 let db_name = 'fred'
 let collection_name = 'macroData'
-let mongoUrl = "add your url here"
+let mongoUrl = "your url here"
 let mongoParams = {useNewUrlParser: true, useUnifiedTopology: true}
 
 
@@ -17,14 +17,20 @@ client.connect(err => {
         console.log('db connected')
 
             // Get the documents collection
-            var collection = dbase.collection('macroData');
+            var collect = dbase.collection('macroData');
             // Create the index
-            collection.createIndex(
-              { release_name : "text" }, function(err, result) {
-              console.log(result);
-            });
+            collect.createIndex(
+              { release_name : "text" });
+            
+            // console.log(collect.getIndexes())
+            
+
+            collect.find({ $text: { $search: "Turnover" } }).toArray()
+            .then(res => {
+              console.log(res)
+            })
+            
+          
        
-       console.log(collection.find({ $text: { $search: "fed" } }))
         
     })
-
